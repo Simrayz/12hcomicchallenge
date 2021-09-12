@@ -8,7 +8,7 @@
 <style>
   @font-face {
   font-family: "Phosphate-Solid";
-  src: url("../assets/fonts/PHOSPHATESOLID.TTF") format("ttf");
+  src: url("/fonts/PHOSPHATESOLID.TTF") format("ttf");
 }
 * {
   font-family: "Phosphate-Solid";
