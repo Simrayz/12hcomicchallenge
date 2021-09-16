@@ -19,17 +19,18 @@
   <Header></Header>
   <main class="max-w-3xl container mx-auto flex-1 px-2 mt-4">
     <Content />
-    <div class="flex justify-center items-center my-20 space-x-8 text-5xl">
-      <h3 class="mb-2">{$_('interested?')}</h3>
+    <div class="flex flex-col sm:flex-row justify-center items-center my-20 sm:space-x-8 text-4xl">
+      <h3 class="sm:mb-2">{$_('interested?')}</h3>
       <button
         class="
+          mt-2
           px-4
           py-2
+          sm:mt-0
           text-white
           bg-orange-main
           rounded-md
           hover:bg-orange-light
-
           uppercase
         "
       >

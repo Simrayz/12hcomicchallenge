@@ -14,7 +14,8 @@
         bg-black
         h-9
         px-4
-        text-white text-2xl
+        text-white
+        sm:text-2xl
         tracking-wider
       "
     >
@@ -39,7 +40,9 @@
           "
           >{$_('gallery')}</a
         >
-        <a class="hover:text-orange-main cursor-pointer">{$_('signUp')}</a>
+        <a class="hover:text-orange-main cursor-pointer whitespace-nowrap"
+          >{$_('signUp')}</a
+        >
       </div>
     </div>
   </div>
