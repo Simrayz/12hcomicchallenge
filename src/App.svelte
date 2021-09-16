@@ -8,14 +8,11 @@
 </script>
 
 <style>
-  @font-face {
-  font-family: local("PHOSPHATE-SOLID");
-  src: url("/fonts/PHOSPHATESOLID.TTF") format("ttf");
-}
-* {
-  font-family: "PHOSPHATE-SOLID";
-}
-
+  @import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+  :root {
+    font-family: 'Wendy One', sans-serif;
+    text-transform: uppercase;
+  }
 </style>
 
 <div class="min-h-screen flex flex-col">
