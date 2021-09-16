@@ -15,5 +15,8 @@
     "svelte": "^3.37.0",
     "tailwindcss": "^2.2.11",
     "vite": "^2.5.4"
+  },
+  "dependencies": {
+    "svelte-i18n": "^3.3.10"
   }
 }

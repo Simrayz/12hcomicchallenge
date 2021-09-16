@@ -1,6 +1,7 @@
 <script>
   import isakLogo from "../assets/images/ISAK.png";
   import neichaLogo from "../assets/images/NAlogo.svg";
+  import { _ } from "svelte-i18n";
 </script>
 
 <style>
@@ -51,7 +52,7 @@
         &copy; 2021
       </p>
       <p>
-        Made by
+        {$_('madeBy')}
         <a href="https://abelweb.no" class="hover:text-orange-light"
           >Abelweb.no</a
         >

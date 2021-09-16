@@ -1,6 +1,7 @@
 <script>
   import bannerImg from "../assets/images/banner.png";
   import clock from "../assets/images/clock.png";
+  import { _ } from "svelte-i18n";
 </script>
 
 <header class="mb-12 sm:mb-20">
@@ -19,7 +20,7 @@
     >
       <div class="left-menu flex justify-center">
         <a class="text-orange-main hover:text-orange-main cursor-pointer"
-          >Info</a
+          >INFO</a
         >
       </div>
       <div class="-mt-5 image-wrapper">
@@ -36,9 +37,9 @@
             hover:text-orange-main
             cursor-pointer
           "
-          >Gallery</a
+          >{$_('gallery')}</a
         >
-        <a class="hover:text-orange-main cursor-pointer">Signup</a>
+        <a class="hover:text-orange-main cursor-pointer">{$_('signUp')}</a>
       </div>
     </div>
   </div>
