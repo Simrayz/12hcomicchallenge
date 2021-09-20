@@ -19,9 +19,11 @@
   <Header></Header>
   <main class="max-w-3xl container mx-auto flex-1 px-2 mt-4">
     <Content />
-    <div class="flex flex-col sm:flex-row justify-center items-center my-20 sm:space-x-8 text-4xl">
+    <div id="signup-container" class="flex flex-col sm:flex-row justify-center items-center my-20 sm:space-x-8 text-4xl">
       <h3 class="sm:mb-2">{$_('interested?')}</h3>
-      <button
+      <a
+        href="https://docs.google.com/forms/d/11rKS2rh1LXXJH2KB980zuI-Sx4U8YeNNkfu9lWi4FG0/viewform?edit_requested=true"
+        target="_blank"
         class="
           mt-2
           px-4
@@ -35,7 +37,7 @@
         "
       >
         {$_('signUp')}
-      </button>
+      </a>
     </div>
   </main>
   <Footer></Footer>

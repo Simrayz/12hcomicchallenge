@@ -5,4 +5,4 @@ import nb from './nb.json'
 addMessages('en', en)
 addMessages('nb', nb)
 
-locale.set(getLocaleFromNavigator())
+locale.set(getLocaleFromNavigator() ?? 'en')

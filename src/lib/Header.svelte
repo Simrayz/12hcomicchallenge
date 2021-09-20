@@ -2,6 +2,12 @@
   import bannerImg from "../assets/images/banner.png";
   import clock from "../assets/images/clock.png";
   import { _ } from "svelte-i18n";
+  import LanguagePicker from "./LanguagePicker.svelte"
+
+  function handleClick() {
+    const element = document.getElementById("signup-container");
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 </script>
 
 <header class="mb-12 sm:mb-20">
@@ -28,21 +34,25 @@
         <img src="{clock}" alt="Klokke" width="100%" />
       </div>
       <div
-        class="flex-1 flex items-center justify-center flex-2 space-x-4 pl-4"
+        class="flex-1 flex items-center justify-end flex-2 space-x-4 pl-4"
       >
         <a
           class="
             pr-4
             h-full
             border-r-2 border-white
-            hover:text-orange-main
-            cursor-pointer
+            text-gray-400
+            cursor-not-allowed
           "
           >{$_('gallery')}</a
         >
-        <a class="hover:text-orange-main cursor-pointer whitespace-nowrap"
-          >{$_('signUp')}</a
+        <button
+          class="hover:text-orange-main cursor-pointer whitespace-nowrap"
+          on:click="{handleClick}"
         >
+          {$_('signUp')}
+        </button>
+        <LanguagePicker class="text-gray-900 text-xs" />
       </div>
     </div>
   </div>
