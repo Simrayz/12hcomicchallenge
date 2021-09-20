@@ -12,7 +12,7 @@
 
 <header class="mb-12 sm:mb-20">
   <div class="max-w-3xl container mx-auto">
-    <img src="{bannerImg}" />
+    <img src="{bannerImg}" alt="12 hour comic challenge" />
     <div
       class="
         flex
@@ -26,9 +26,9 @@
       "
     >
       <div class="left-menu flex justify-center">
-        <a class="text-orange-main hover:text-orange-main cursor-pointer"
-          >INFO</a
-        >
+        <a href="/" class="text-orange-main hover:text-orange-main cursor-pointer">
+          INFO
+        </a>
       </div>
       <div class="-mt-5 image-wrapper">
         <img src="{clock}" alt="Klokke" width="100%" />
@@ -37,6 +37,7 @@
         class="flex-1 flex items-center justify-end flex-2 space-x-4 pl-4"
       >
         <a
+          href="/"
           class="
             pr-4
             h-full
@@ -52,7 +53,7 @@
         >
           {$_('signUp')}
         </button>
-        <LanguagePicker class="text-gray-900 text-xs" />
+        <LanguagePicker />
       </div>
     </div>
   </div>

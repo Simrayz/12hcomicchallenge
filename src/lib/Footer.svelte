@@ -33,7 +33,13 @@
   >
     <div class="flex space-x-4">
       <a href="https://isak.no/">
-        <img src="{isakLogo}" class="isak-logo" height="100px" width="100px" />
+        <img
+          src="{isakLogo}"
+          class="isak-logo"
+          height="100px"
+          width="100px"
+          alt="ISAK logo"
+        />
       </a>
       <a href="https://neichasart.com">
         <img
@@ -41,6 +47,7 @@
           class="neicha-logo"
           height="100px"
           width="100px"
+          alt="Neicha's Art logo"
         />
       </a>
     </div>

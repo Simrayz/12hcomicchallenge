@@ -4,7 +4,7 @@
   import Footer from './lib/Footer.svelte';
   import "./assets/main.css";
   import "../locales/i18n";
-  import { _ } from 'svelte-i18n';
+  import { _, isLoading } from 'svelte-i18n';
 </script>
 
 <style>
@@ -16,6 +16,7 @@
 </style>
 
 <div class="min-h-screen flex flex-col">
+  {#if !$isLoading }
   <Header></Header>
   <main class="max-w-3xl container mx-auto flex-1 px-2 mt-4">
     <Content />
@@ -41,4 +42,5 @@
     </div>
   </main>
   <Footer></Footer>
+  {/if}
 </div>
