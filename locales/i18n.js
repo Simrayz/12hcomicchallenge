@@ -5,7 +5,7 @@ import nb from './nb.json'
 addMessages('en', en)
 addMessages('nb', nb)
 
-register('en', () => import('./.en.json'))
+register('en', () => import('./en.json'))
 register('nb', () => import('./nb.json'))
 
 init({
